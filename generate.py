@@ -2,31 +2,133 @@ from pathlib import Path
 
 years = {
     "2026":
-        ["X", "X", ("Chalmers", "chalmers-2026.pdf")]
+        [("KTH", "https://youtu.be/Meb1kap46NQ"),
+         "X",
+         ("Chalmers", "chalmers-2026.pdf"),
+         ("PO Open", "https://typst.app/project/rSB2KmP3d2Zrfc61FLv88K"),
+         "Final X",
+         "/",
+         "/",
+         "/"]
     ,
     "2025":
-        ["X", "X", ("Chalmers", "chalmers-2025.pdf")]
+        [("KTH", "https://www.youtube.com/watch?v=_yLGiSwuoDg"),
+         "X",
+         ("Chalmers", "chalmers-2025.pdf"),
+         ("PO Open", "poopen-2025.pdf"),
+         "/",
+         "/",
+         "/",
+         "/"]
     ,
     "2024":
-        ["X", "X", ("Chalmers", "chalmers-2024.pdf")]
+        ["/",
+         "X",
+         ("Chalmers", "chalmers-2024.pdf"),
+         ("PO Open", "poopen-2024.pdf"),
+         "/",
+         "/",
+         "/",
+         "/"]
     ,
     "2023":
-        ["X", "X", ("Chalmers", "chalmers-2023.pdf")]
+        ["/",
+         "/",
+         ("Chalmers", "chalmers-2023.pdf"),
+         ("PO Open", "poopen-2023.pdf"),
+         "/",
+         "/",
+         "/",
+         "/"]
     ,
     "2022":
-        ["X", "X", ("Chalmers", "chalmers-2022.pdf")]
+        [("KTH", "https://www.youtube.com/watch?v=AEHCXK_lrkw"),
+         ("LTH", "lth-2022.pdf"),
+         ("Chalmers", "chalmers-2022.pdf"),
+         ("PO Open", "poopen-2022.pdf"),
+         "Final X",
+         "/",
+         "/",
+         "/"]
     ,
     "2021":
-        ["X", "X", ("Chalmers", "chalmers-2021.pdf")]
+        [("KTH", "kth-2021.pdf"),
+         ("LTH", "https://www.youtube.com/watch?v=yWpvAQf-prY"),
+         ("Chalmers", "chalmers-2021.pdf"),
+         ("PO Open", "poopen-2021.pdf"),
+         "JobAgent X",
+         "Final X",
+         "/",
+         "/"]
+    ,
+    "2020":
+        [("KTH", "kth-2020.pdf"),
+         ("LTH", "lth-2020.pdf"),
+         "/",
+         ("PO Open", "poopen-2020.pdf"),
+         "Sandvik X",
+         "/",
+         "/",
+         "/"]
+    ,
+    "2019":
+        ["X",
+         "X",
+         "/",
+         ("PO Open", "poopen-2019.pdf"),
+         "LiU X",
+         "Google X",
+         "Final X",
+         "/"]
+    ,
+    "2018":
+        ["X",
+         "/",
+         "/",
+         ("PO Open", "poopen-2018.pdf"),
+         "HiQ X",
+         "LiU X",
+         "Nova X",
+         "Final X"]
+    ,
+    "2017":
+        [("KTH", "kth-2017.pdf"),
+         ("LTH", "lth-2017.pdf"),
+         "/",
+         "/",
+         "HiQ X",
+         "Kattis Challenge X",
+         "/",
+         "/"]
+    ,
+    "2016":
+        [("KTH", "kth-2016.pdf"), "/", "/", "/", "/", "/", "/", "/"]
+    ,
+    "2015":
+        [("KTH", "kth-2015.pdf"), "/", "/", "/", "/", "/", "/", "/"]
+    ,
+    "2014":
+        [("KTH", "kth-2014.pdf"), "/", "/", "/", "/", "/", "/", "/"]
+    ,
+    "2013":
+        [("KTH", "kth-2013.pdf"), "/", "/", "/", "/", "/", "/", "/"]
+    ,
+    "2012":
+        [("KTH", "kth-2012.pdf"), "/", "/", "/", "/", "/", "/", "/"]
+    ,
+    "2011":
+        [("KTH", "kth-2011.pdf"), "/", "/", "/", "/", "/", "/", "/"]
     ,
 }
 
-header = ["Year", "KTH", "LTH", "Chalmers", "Competition 1", "Competition 2"]
+header = ["Year", "KTH", "LTH", "Chalmers", "PO Open", "Competition 1", "Competition 2", "Competition 3", "Competition 4"]
 
 print("""Legend:
 - X: missing
 - *: unofficial
 - /: no contest that year
+
+Named contests in the Competition columns (e.g. "HiQ X", "LiU X", "Final X") refer to other Swedish Coding Cup contests for which no editorial has been collected.
 
 Please contact me if you have any of the missing editorials.
 Also feel free to contact me if you believe you have a better version of any of the unofficial ones.
@@ -49,7 +151,7 @@ def format_url(year, task):
         if mark in task_name:
             suffix += mark
             task_name = task_name.replace(mark, "")
-    
+
     if isinstance(task, str):
         task_shortname = ''.join(task_name.split()).lower()
         for ext in extensions:
@@ -79,17 +181,19 @@ for year, p_list in years.items():
 
     result = []
     for column, task in enumerate(row):
-        task_name = task if isinstance(task, str) else task[0]
-        if task and not task_name.startswith("/") and task_name != "X":
+        if task == "/":
+            result.append("/")
+            continue
+        if isinstance(task, tuple):
             tot += 1
-            if "(u)" not in task:
+            if "(u)" not in task[0]:
                 has += 1
             result.append(format_url(year, task))
-        else:
-            if not task_name.startswith("/"):
-                tot += 1
-            result.append(task)
-    
+            continue
+        # String task: either "X" or "Name X"
+        tot += 1
+        result.append(task)
+
     result = [year] + result
     print("| " + " | ".join(result) + " |")
 
