@@ -6,7 +6,7 @@ years = {
          "X",
          ("Chalmers", "chalmers-2026.pdf"),
          ("PO Open", "https://typst.app/project/rSB2KmP3d2Zrfc61FLv88K"),
-         "Final X",
+         "/",
          "/",
          "/",
          "/"]
@@ -16,7 +16,7 @@ years = {
          "X",
          ("Chalmers", "chalmers-2025.pdf"),
          ("PO Open", "poopen-2025.pdf"),
-         "/",
+         ("Lovable", "lovable-2025.pdf"),
          "/",
          "/",
          "/"]
@@ -46,7 +46,7 @@ years = {
          ("LTH", "lth-2022.pdf"),
          ("Chalmers", "chalmers-2022.pdf"),
          ("PO Open", "poopen-2022.pdf"),
-         "Final X",
+         "Final (X)",
          "/",
          "/",
          "/"]
@@ -56,8 +56,8 @@ years = {
          ("LTH", "https://www.youtube.com/watch?v=yWpvAQf-prY"),
          ("Chalmers", "chalmers-2021.pdf"),
          ("PO Open", "poopen-2021.pdf"),
-         "JobAgent X",
-         "Final X",
+         "Final (X)",
+         "JobAgent (X)",
          "/",
          "/"]
     ,
@@ -66,7 +66,7 @@ years = {
          ("LTH", "lth-2020.pdf"),
          "/",
          ("PO Open", "poopen-2020.pdf"),
-         "Sandvik X",
+         "Sandvik (X)",
          "/",
          "/",
          "/"]
@@ -76,9 +76,9 @@ years = {
          "X",
          "/",
          ("PO Open", "poopen-2019.pdf"),
-         "LiU X",
-         "Google X",
-         "Final X",
+         "Final (X)",
+         "LiU (X)",
+         "Google (X)",
          "/"]
     ,
     "2018":
@@ -86,18 +86,18 @@ years = {
          "/",
          "/",
          ("PO Open", "poopen-2018.pdf"),
-         "HiQ X",
-         "LiU X",
-         "Nova X",
-         "Final X"]
+         "Final (X)",
+         "HiQ (X)",
+         "LiU (X)",
+         "Nova (X)"]
     ,
     "2017":
         [("KTH", "kth-2017.pdf"),
          ("LTH", "lth-2017.pdf"),
          "/",
          "/",
-         "HiQ X",
-         "Kattis Challenge X",
+         "HiQ (X)",
+         "Kattis Challenge (X)",
          "/",
          "/"]
     ,
@@ -128,7 +128,7 @@ print("""Legend:
 - *: unofficial
 - /: no contest that year
 
-Named contests in the Competition columns (e.g. "HiQ X", "LiU X", "Final X") refer to other Swedish Coding Cup contests for which no editorial has been collected.
+Named contests in the Competition columns (e.g. "HiQ (X)", "LiU (X)", "Final (X)") refer to other Swedish Coding Cup contests for which no editorial has been collected.
 
 Please contact me if you have any of the missing editorials.
 Also feel free to contact me if you believe you have a better version of any of the unofficial ones.
@@ -190,7 +190,7 @@ for year, p_list in years.items():
                 has += 1
             result.append(format_url(year, task))
             continue
-        # String task: either "X" or "Name X"
+        # String task: either "X" or "Name (X)"
         tot += 1
         result.append(task)
 
