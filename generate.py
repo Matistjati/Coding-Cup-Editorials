@@ -76,7 +76,7 @@ years = {
          "X",
          "/",
          ("PO Open", "poopen-2019.pdf"),
-         "Final (X)",
+         ("Final", "final-2019.pdf"),
          "LiU (X)",
          "Google (X)",
          "/"]

@@ -17,7 +17,7 @@ Also feel free to contact me if you believe you have a better version of any of 
 | 2022 | [KTH](https://www.youtube.com/watch?v=AEHCXK_lrkw) | [LTH](editions/2022/lth-2022.pdf) | [Chalmers](editions/2022/chalmers-2022.pdf) | [PO Open](editions/2022/poopen-2022.pdf) | Final (X) | / | / | / |
 | 2021 | [KTH](editions/2021/kth-2021.pdf) | [LTH](https://www.youtube.com/watch?v=yWpvAQf-prY) | [Chalmers](editions/2021/chalmers-2021.pdf) | [PO Open](editions/2021/poopen-2021.pdf) | Final (X) | JobAgent (X) | / | / |
 | 2020 | [KTH](editions/2020/kth-2020.pdf) | [LTH](editions/2020/lth-2020.pdf) | / | [PO Open](editions/2020/poopen-2020.pdf) | Sandvik (X) | / | / | / |
-| 2019 | X | X | / | [PO Open](editions/2019/poopen-2019.pdf) | Final (X) | LiU (X) | Google (X) | / |
+| 2019 | X | X | / | [PO Open](editions/2019/poopen-2019.pdf) | [Final](editions/2019/final-2019.pdf) | LiU (X) | Google (X) | / |
 | 2018 | X | / | / | [PO Open](editions/2018/poopen-2018.pdf) | Final (X) | HiQ (X) | LiU (X) | Nova (X) |
 | 2017 | [KTH](editions/2017/kth-2017.pdf) | [LTH](editions/2017/lth-2017.pdf) | / | / | HiQ (X) | Kattis Challenge (X) | / | / |
 | 2016 | [KTH](editions/2016/kth-2016.pdf) | / | / | / | / | / | / | / |
@@ -28,4 +28,4 @@ Also feel free to contact me if you believe you have a better version of any of 
 | 2011 | [KTH](editions/2011/kth-2011.pdf) | / | / | / | / | / | / | / |
 
 
-Progress: 62.75% (32/51)
+Progress: 64.71% (33/51)
