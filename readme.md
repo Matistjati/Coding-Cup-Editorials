@@ -11,7 +11,7 @@ Also feel free to contact me if you believe you have a better version of any of 
 | Year | KTH | LTH | Chalmers | PO Open | Competition 1 | Competition 2 | Competition 3 | Competition 4 |
 |------|------|------|------|------|------|------|------|------|
 | 2026 | [KTH](https://youtu.be/Meb1kap46NQ) | X | [Chalmers](editions/2026/chalmers-2026.pdf) | [PO Open](https://typst.app/project/rSB2KmP3d2Zrfc61FLv88K) | / | / | / | / |
-| 2025 | [KTH](https://www.youtube.com/watch?v=_yLGiSwuoDg) | X | [Chalmers](editions/2025/chalmers-2025.pdf) | [PO Open](editions/2025/poopen-2025.pdf) | [Lovable](editions/2025/lovable-2025.pdf) | / | / | / |
+| 2025 | [KTH](https://www.youtube.com/watch?v=_yLGiSwuoDg) | [LTH](editions/2025/lth-2025.pdf) | [Chalmers](editions/2025/chalmers-2025.pdf) | [PO Open](editions/2025/poopen-2025.pdf) | [Lovable](editions/2025/lovable-2025.pdf) | / | / | / |
 | 2024 | / | X | [Chalmers](editions/2024/chalmers-2024.pdf) | [PO Open](editions/2024/poopen-2024.pdf) | / | / | / | / |
 | 2023 | / | / | [Chalmers](editions/2023/chalmers-2023.pdf) | [PO Open](editions/2023/poopen-2023.pdf) | / | / | / | / |
 | 2022 | [KTH](https://www.youtube.com/watch?v=AEHCXK_lrkw) | [LTH](editions/2022/lth-2022.pdf) | [Chalmers](editions/2022/chalmers-2022.pdf) | [PO Open](editions/2022/poopen-2022.pdf) | Final (X) | / | / | / |
@@ -28,4 +28,4 @@ Also feel free to contact me if you believe you have a better version of any of 
 | 2011 | [KTH](editions/2011/kth-2011.pdf) | / | / | / | / | / | / | / |
 
 
-Progress: 64.71% (33/51)
+Progress: 66.67% (34/51)

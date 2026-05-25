@@ -13,7 +13,7 @@ years = {
     ,
     "2025":
         [("KTH", "https://www.youtube.com/watch?v=_yLGiSwuoDg"),
-         "X",
+         ("LTH", "lth-2025.pdf"),
          ("Chalmers", "chalmers-2025.pdf"),
          ("PO Open", "poopen-2025.pdf"),
          ("Lovable", "lovable-2025.pdf"),
